@@ -6,6 +6,11 @@ package com.zipcodewilmington.person;
 public class Person {
     private String name;
     private int age;
+    private double weight;
+    private double height;
+    private String eyeColor;
+    private String hairColor;
+    private String lastName;
 
     public Person() {
         this.name = "";
@@ -27,7 +32,31 @@ public class Person {
         return this.name;
     }
 
+
     public Integer getAge() {
         return this.age;
+    }
+    public void setHeight(Double height) {this.height=height;}
+    public Double getHeight() {
+        return this.height;
+    }
+
+    public void setWeight(Double weight) {this.weight=weight;}
+    public Double getWeight() {
+        return this.weight;
+    }
+
+    public void setEyeColor(String eyeColor) {this.eyeColor=eyeColor;}
+    public String getEyeColor() {
+        return this.eyeColor;
+    }
+    public void setHairColor(String hairColor) {this.hairColor=hairColor;}
+    public String getHairColor() {
+        return this.hairColor;
+    }
+
+    public void setLastName(String lastName) {this.lastName=lastName;}
+    public String getLastName() {
+        return this.lastName;
     }
 }
